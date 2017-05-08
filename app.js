@@ -37,6 +37,7 @@ app.use(express.static(__dirname + '/public'));
 // Configurar las rutas en archivos separados
 app.use('/users', userRouter);
 
+//configurar puerto por defecto
 app.set('port',(process.env.PORT || 3000));
 // Configurar la conexión a la base de datos
 databse.connect(databse.MODE_PRODUCTION, function(err) {
